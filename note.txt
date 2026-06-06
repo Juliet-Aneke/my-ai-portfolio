@@ -1,0 +1,147 @@
+ASSIGNMENT 1 - MY PERSONAL POTFOLIO WEBSITE
+
+FIRST SET OF PROMPTS — MENU SECTION	
+
+PROMPT 1
+Gemini, I am a new software developer, and I want you to help me build my personal portfolio website with the name JULIET ANEKE. Build this for me using HTML and CSS. Let the IDE be Visual Studio Code. Let’s build it section by section
+
+Create the Logo only
+Create a modern logo for my personal portfolio called JULIET ANEKE.
+The logo should look colorful, friendly, professional, and attractive.
+Use an orange and white color combination with soft rounded styling suitable for a software developer.
+Place the logo at the top-left corner of the landing page inside the navigation bar.
+Ensure the logo is properly aligned vertically and has enough spacing from the edges of the screen.
+
+Prompt 2 — Create the Navigation Menu
+	
+Create a responsive navigation menu for my personal portfolio website. The menu bar should contain the following items:
+- Home
+- About
+- Projects
+- Contact 
+
+The navigation menu should be centered horizontally inside the menu bar and each navigation menu should link to the page where it is expected to be.
+
+Prompt 3 — Style the Entire Menu Bar
+
+Style the entire navigation bar with a red background frame. Use white text for all menu items so they are clearly visible. Add hover effects to the menu items. 
+Make the navigation bar responsive on mobile, tablet, and desktop screens.
+
+SECOND SET OF PROMPTS — HERO SECTION
+
+Prompt 4 — Create the Hero Section Layout
+Create a hero section for the personal portfolio landing page that occupies 100% width of the page and about 35% height of the visible screen area. 
+
+Prompt 5 — Partition the Hero Section
+Partition the hero section into two sections horizontally.
+
+Left Section:
+- Large heading
+- Short Introductory text
+- “My Resume” button
+
+Right Section:
+- Large image of myself
+
+Ensure both sections are properly aligned and responsive.
+
+Prompt 6 — Hero Text Content
+
+Add the following content to the hero section:
+Heading:
+“Juliet Aneke — Fullstack & AI Engineer”
+
+Subtext:
+“I design and engineer end-to-end digital products, blending clean code with the power of artificial intelligence to solve real-world problems.”
+
+Add a yellow “My Resume” button below the text.
+
+THIRD SET OF PROMPTS — ABOUT SECTION
+Prompt 7 — Create an about section right under the hero of the landing page.
+Let the menu bar when clicked on link to this section as it is a single page website.
+Create a modern, professional, and engaging "About Me" section for a personal portfolio website. The content should be written in the first person and have a friendly, confident, and inspiring tone.
+The About section should:
+•	Include a compelling introduction. 
+•	Highlight my background and career journey. 
+•	Showcase my interest in software development and AI. 
+•	Mention my personal values, hobbies, and passion for growth. 
+•	End with a positive statement about my future goals and aspirations in the tech industry. 
+The content should be suitable for a modern developer portfolio and should be between 200–300 words. Use clear, professional language that helps visitors connect with my personality and career story.
+
+FOURTH SET OF PROMPTS — PROJECT SECTION
+Prompt 7 — Create a project section right under the about of the landing page. Let it include projects completed all in its own card box. Let it have nine cards of three columns and three rows. 
+
+Prompt 8 — Let the section when clicked on from the menu bar, scroll to the section on the landing page since it is a single page website.
+
+Prompt 9 — Let it include projects  completed in the program. Each should have its own card box
+The six cards to be displayed are
+-	A personal Portfolio website HTML 
+-	A Personal Portfolio website HTML and Vanilla CSS
+-	Nexus Website – HTML and Tailwind CSS
+-	An Italian Restaurant website – tool used -HTML and Vanilla CSS
+-	Philip Consulting Website
+-	E-commerce website
+-	A clinic website 
+-	Language Model
+-	Git and Git Hub
+Each card box should show a high level summary of what the project set out to solve, how I went about it from design to coding to delivery.
+Add a yellow “View Project” button inside each box.
+
+FIFTH SET OF PROMPTS — CONTACT SECTION
+
+Prompt 10 —  Create a modern, responsive, and professional Contact Page for my personal portfolio website.
+The design should be clean, attractive, and user-friendly, using a modern color scheme of orange, white, and dark gray.
+
+Contact Page Requirements:
+1. Hero Section
+•	A welcoming heading: "Get In Touch" 
+•	A short introduction:
+"I am always open to discussing new projects, creative ideas, internships, collaborations, and exciting opportunities in software development and artificial intelligence."
+•	Include a professional illustration or contact-related icon. 
+
+Prompt 11 —  Contact Information Section
+Display the following information with attractive icons:
+•	Email Address 
+•	Phone Number 
+•	Location (Nigeria) 
+•	LinkedIn Profile 
+•	GitHub Profile 
+Each item should have hover effects.
+
+Prompt 12 —  Contact Form
+Create a modern contact form containing:
+•	Full Name 
+•	Email Address 
+•	Subject 
+•	Message 
+•	Send Message Button 
+
+    Form Requirements:
+•	Rounded input fields 
+•	Smooth focus animations 
+•	Form validation styling 
+•	Responsive design 
+
+
+SIXT SET OF PROMPTS — FOOTER SECTION
+
+Prompt 13 — Create Footer
+Create a professional footer section for my personal portfolio landing page.
+
+Prompt 14 — Add Footer Content
+Add the following sections inside the footer:
+- Home
+- About
+- Projects
+- Contact
+
+Prompt 15 — Footer Styling
+Style the footer with a dark orange background and white text. 
+Add spacing, hover effects, and responsive layouts for mobile and desktop screens.
+
+
+
+	
+
+
+

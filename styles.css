@@ -1,0 +1,1106 @@
+/* 1. Reset and Core Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* Sleek, dark tech background to make the white/orange pop */
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth; /* Gives your page a premium, fluid scrolling motion */
+}
+
+/* 2. Navigation Bar Container */
+.navbar {
+    display: flex;
+    align-items: center; /* Vertically centers the logo */
+    justify-content: flex-start;
+    padding: 20px 40px; /* Generous spacing from the screen edges */
+    background-color: rgba(15, 23, 42, 0.8); /* Blends with background */
+    backdrop-filter: blur(10px); /* Modern blurred glass effect */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* 3. Logo Layout */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Space between the icon and the text */
+    cursor: pointer;
+}
+
+/* 4. Soft Rounded Logo Icon */
+.logo-icon {
+    background: linear-gradient(135deg, #FF6B35, #FF8C61); /* Friendly orange gradient */
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1.1rem;
+    padding: 10px 14px;
+    border-radius: 12px; /* Soft rounded styling */
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3); /* Soft glow */
+    transition: transform 0.2s ease;
+}
+
+/* 5. Logo Typography */
+.logo-text {
+    color: #ffffff; /* White part of the name */
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+/* Orange Highlight for Last Name */
+.logo-text .highlight {
+    color: #FF6B35; 
+    margin-left: 4px;
+}
+
+/* Quick Hover Effect for Fun */
+.logo-container:hover .logo-icon {
+    transform: translateY(-2px) rotate(-5deg);
+}
+
+/* ==========================================================================
+   2. NAVBAR BASE LAYOUT (Desktop View)
+   ========================================================================== */
+.navbar {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; /* Logo on Left, Menu on Right */
+    padding: 20px 40px; 
+    background-color: #0f172a; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    background: linear-gradient(135deg, #FF6B35, #FF8C61);
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1.1rem;
+    padding: 10px 14px;
+    border-radius: 12px;
+}
+
+.logo-text {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.logo-text .highlight {
+    color: #FF6B35;
+}
+
+/* Base Desktop Menu Style */
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #94a3b8;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #FF6B35;
+}
+
+/* Hide Hamburger Button on Desktop by default */
+.hamburger-btn {
+    display: none;
+    background: none;
+    border: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26px;
+    height: 18px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hamburger-line {
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff; /* White lines */
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+
+/* Hero Section Layout */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px; /* Adjust padding as needed */
+}
+
+.hero-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    gap: 50px; /* Space between the two sections */
+}
+
+/* Left Content Styles */
+.hero-content-left {
+    flex: 1; /* Takes up 50% of the container */
+}
+
+.hero-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-intro {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Button Styles */
+.hero-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #333; /* Dark button */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #555; /* Lighter on hover */
+}
+
+/* Right Image Styles */
+.hero-image-right {
+    flex: 1; /* Takes up 50% of the container */
+    display: flex;
+    justify-content: center; /* Centers the image if smaller */
+}
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image fills its container nicely */
+    /* If you want a circular image, add border-radius: 50%; */
+}
+/* ==========================================================================
+   UPDATED LEFT HERO CONTENT & YELLOW RESUME BUTTON
+   ========================================================================== */
+
+/* Left Side Text Block Layout */
+.hero-content-left {
+    flex: 1; /* Takes up 50% of the horizontal space on desktop */
+    text-align: left;
+}
+
+.hero-heading {
+    color: #FFD166;               /* Deep professional dark slate */
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.hero-intro {
+    color: white;               /* Soft, clean charcoal slate readable gray */
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 32px;
+    line-height: 1.6;
+    max-width: 540px;             /* Keeps sentences comfortable to read */
+}
+
+/* Yellow Button Styles */
+.hero-button {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #FFD166;    /* Vibrant, high-visibility professional yellow */
+    color: #0f172a;               /* Crisp, high-contrast dark text */
+    text-decoration: none;
+    border-radius: 8px;           /* Soft rounded styling matching your theme */
+    font-weight: 700;             /* Bold text */
+    font-size: 1rem;
+    letter-spacing: 0.3px;
+    box-shadow: 0 4px 14px rgba(255, 209, 102, 0.35); /* Soft yellow accent glow */
+    transition: all 0.3s ease;    /* Smooth movement and fade animation */
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Hover & Interactive effects for your Resume button */
+.hero-button:hover {
+    background-color: #FFC333;    /* Slightly deeper gold-yellow on hover */
+    transform: translateY(-3px);  /* Gentle lift animation */
+    box-shadow: 0 6px 20px rgba(255, 209, 102, 0.5); /* Stronger glow on hover */
+}
+
+/* Click feedback effect */
+.hero-button:active {
+    transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   9. ABOUT ME SECTION
+   ========================================================================== */
+.about-section {
+    width: 100%;
+    padding: 100px 24px;
+    background-color: #0f172a; /* Sleek dark background matching your global theme */
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.about-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+/* Section Header Styles */
+.about-header {
+    text-align: center;
+}
+
+.about-subtitle {
+    color: #D9383A; /* Brand accent red */
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about-title {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-top: 8px;
+}
+
+.title-underline {
+    width: 60px;
+    height: 4px;
+    background-color: #D9383A; /* Red bar underneath titles */
+    margin: 12px auto 0 auto;
+    border-radius: 2px;
+}
+
+/* Layout Grid Partitioning */
+.about-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr; /* 60% Left Story, 40% Right Quick Facts */
+    gap: 60px;
+    align-items: start;
+}
+
+/* Story Narrative Column Styling */
+.about-story {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.story-paragraph {
+    color: #94a3b8; /* Muted modern slate-gray for long-form reading */
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.story-paragraph.highlight-text {
+    color: #ffffff; /* Bright white accent for first introductory punch-line */
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.story-paragraph.future-vision {
+    border-left: 3px solid #FFD166; /* Yellow left-side quote band accent */
+    padding-left: 16px;
+    color: #e2e8f0;
+    font-style: italic;
+}
+
+/* Right Quick Highlights Cards Column */
+.about-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.highlight-card {
+    background-color: #1e293b; /* Distinct dark-card contrast backdrop */
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.highlight-card:hover {
+    transform: translateX(5px); /* Gentle slide shift layout animation */
+    border-color: rgba(217, 56, 58, 0.3); /* Subtle soft red hover indicator glow */
+}
+
+.highlight-card h3 {
+    color: #FFD166; /* Signature yellow for subheaders */
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.highlight-card p {
+    color: #cbd5e1;
+    font-size: 1rem;
+}
+
+
+/* ==========================================================================
+   7. PROJECTS SECTION (3 Columns, 3 Rows)
+   ========================================================================== */
+.projects-section {
+    width: 100%;
+    padding: 100px 24px;
+    background-color: #0f172a; /* Sleek dark background slate */
+    display: flex;
+    justify-content: center;
+}
+
+.projects-container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Shared Section Header */
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-subtitle {
+    color: #D9383A; /* Accent brand red */
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-title {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-top: 8px;
+}
+
+/* The Projects 3x3 Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exactly 3 equal columns */
+    grid-template-rows: repeat(3, auto);    /* Exactly 3 rows adapting to content height */
+    gap: 30px; /* Space between the card boxes */
+}
+
+/* Individual Project Card Box Layout */
+.project-card {
+    background-color: #1e293b; /* Dark-card contrast backdrop */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 32px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Hover Effect: Box transforms upward with elegant brand accent glow */
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(217, 56, 58, 0.4); /* Accent red borders on hover */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.project-tag {
+    color: #FFD166; /* Signature yellow tags */
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    letter-spacing: 0.5px;
+}
+
+.project-card h3 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #94a3b8; /* Muted modern reading slate */
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.project-card a {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #FFD166;    /* Vibrant, high-visibility professional yellow */
+    color: #0f172a;               /* Crisp, high-contrast dark text */
+    text-decoration: none;
+    border-radius: 8px;           /* Soft rounded styling matching your theme */
+    font-weight: 700;             /* Bold text */
+    font-size: 1rem;
+    letter-spacing: 0.3px;
+    box-shadow: 0 4px 14px rgba(255, 209, 102, 0.35); /* Soft yellow accent glow */
+    transition: all 0.3s ease;    /* Smooth movement and fade animation */
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Hover & Interactive effects for your Resume button */
+.project-card a:hover {
+    background-color: #FFC333;    /* Slightly deeper gold-yellow on hover */
+    transform: translateY(-3px);  /* Gentle lift animation */
+    box-shadow: 0 6px 20px rgba(255, 209, 102, 0.5); /* Stronger glow on hover */
+}
+
+/* Click feedback effect */
+.project-card a:active {
+    transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   10. MODERN CONTACT PAGE SECTION
+   ========================================================================== */
+.contact-section {
+    width: 100%;
+    padding: 120px 24px;
+    background-color: #1a1e24; /* Modern Deep Dark Gray Canvas Backdrop */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px; /* Generous breathing window between side columns */
+}
+
+/* Left Section Content Layout */
+.contact-content-left {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-eyebrow {
+    color: #ff7a00; /* Modern Accent Orange */
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-bottom: 12px;
+}
+
+.contact-heading {
+    color: #ffffff; /* Clean High-Contrast White */
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+    line-height: 1.1;
+}
+
+.contact-introduction {
+    color: #9ca3af; /* Soft Muted Slate Gray text */
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    max-width: 580px;
+}
+
+/* Informational Contact Icons Block */
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Space between each information card box */
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Base style for individual item card boxes */
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #232932; /* Lighter dark-gray box backdrop */
+    padding: 16px 20px;
+    border-radius: 12px;
+    text-decoration: none; /* Removes link underlines */
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Static container look for non-clickable location item */
+.detail-item.non-clickable {
+    cursor: default;
+}
+
+/* Dynamic Hover Micro-Interactions */
+.detail-item:not(.non-clickable):hover {
+    background-color: #2d3540; /* Lightens backdrop slightly */
+    border-color: rgba(255, 122, 0, 0.3); /* Soft orange border fade-in */
+    transform: translateX(8px); /* Clean slide-right animation nudge */
+}
+
+/* Icon circular frame wrapper */
+.detail-icon-box {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(255, 122, 0, 0.1); /* Subtle transparent orange tint */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+/* Pop the icon box background on active hover */
+.detail-item:not(.non-clickable):hover .detail-icon-box {
+    background-color: #ff7a00; /* Turns solid orange on hover */
+}
+
+.detail-icon {
+    font-size: 1.3rem;
+    transition: transform 0.3s ease;
+}
+
+/* Subtle spin or bounce to the icon on hover */
+.detail-item:not(.non-clickable):hover .detail-icon {
+    transform: scale(1.1);
+}
+
+/* Text layout alignment */
+.detail-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Small contextual subtitle label */
+.detail-label {
+    color: #ff7a00; /* Accent Orange labels */
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* The actual contact value text */
+.detail-value {
+    color: #e5e7eb; /* Crisp, readable near-white */
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+/* ==========================================================================
+   MODERN PORTFOLIO INPUT FORM & VALIDATION STYLING
+   ========================================================================== */
+.contact-form-right {
+    flex: 1.1;
+    width: 100%;
+}
+
+.portfolio-form {
+    background-color: #232932; /* Lighter dark-gray card container backing */
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 24px; /* Clean breathing room between inputs */
+}
+
+/* Individual Form Core Blocks */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+}
+
+.form-label {
+    color: #e5e7eb; /* Soft off-white text label */
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* Rounded inputs and textareas */
+.form-input {
+    width: 100%;
+    background-color: #1a1e24; /* Deep inset background color */
+    border: 2px solid #2d3540; /* Soft default border */
+    color: #ffffff;
+    padding: 14px 18px;
+    border-radius: 10px; /* Rounded field styling requirement */
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Fixed scaling for textareas */
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Input placeholder text customization */
+.form-input::placeholder {
+    color: #64748b;
+}
+
+/* ── SMOOTH FOCUS ANIMATION LINK ── */
+.form-input:focus {
+    border-color: #ff7a00; /* Snaps seamlessly to your modern accent orange */
+    box-shadow: 0 0 0 4px rgba(255, 122, 0, 0.15); /* Soft ambient orange glow */
+    background-color: #1e252d;
+}
+
+/* ── FORM VALIDATION STATE STYLING ── */
+/* When an input is invalid but the user has begun typing out information */
+.form-input:invalid:not(:placeholder-shown) {
+    border-color: #ef4444; /* Alert Red tint border */
+    box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.1);
+}
+
+/* Hide warning text boxes by default */
+.error-message {
+    display: none;
+    color: #ef4444;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+/* Display the warning helper immediately below an active bad input field */
+.form-input:invalid:not(:placeholder-shown) + .error-message {
+    display: block;
+}
+
+/* ── ORANGE SEND MESSAGE BUTTON ── */
+.form-submit-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: #ff7a00; /* Modern Orange Accent */
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.25s ease;
+    margin-top: 8px;
+    box-shadow: 0 4px 12px rgba(255, 122, 0, 0.2);
+}
+
+.form-submit-btn:hover {
+    background-color: #e06b00; /* Darker rich shade on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 122, 0, 0.35);
+}
+
+.form-submit-btn:active {
+    transform: translateY(0);
+}
+
+.btn-arrow {
+    transition: transform 0.25s ease;
+}
+
+/* Dynamic button micro-interaction nudge */
+.form-submit-btn:hover .btn-arrow {
+    transform: translateX(4px);
+}
+
+
+
+
+/* ==========================================================================
+    PROFESSIONAL PORTFOLIO SITE FOOTER
+   ========================================================================== */
+.site-footer {
+    width: 100%;
+    background-color:#e06b00; 
+    color: #ffffff; /* Universal White Text */
+    padding: 80px 24px 40px 24px; /* Generous spacing top/bottom and sides */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-top-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px; /* Healthy breathing room between desktop columns */
+}
+
+/* Column distribution weights */
+.footer-column {
+    flex: 1;
+}
+
+.brand-column {
+    flex: 1.4;
+}
+
+/* Footer Logo Styling */
+.footer-logo {
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.footer-logo span {
+    color: #111419; /* Contrast dark charcoal dot identifier */
+}
+
+.footer-bio {
+    color: rgba(255, 255, 255, 0.85); /* Highly readable semi-transparent white */
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-top: 16px;
+    max-width: 360px;
+}
+
+/* Column Header Labels */
+.footer-heading {
+    color: #ffffff;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Navigation List Stack styling */
+.footer-links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px; /* Clean tracking space between list rows */
+}
+
+.footer-links-list a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-block;
+    transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* ── LINK HOVER EFFECTS ── */
+.footer-links-list a:hover {
+    color: #111419; /* Snaps beautifully to contrast dark charcoal */
+    transform: translateX(6px); /* Elegant slide-right micro-interaction */
+}
+
+.social-helper-text {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+/* Social Circle Buttons Row */
+.footer-social-row {
+    display: flex;
+    gap: 12px;
+}
+
+.social-circle-btn {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.12); /* Translucent white pill container */
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+/* ── SOCIAL BUTTON HOVER EFFECTS ── */
+.social-circle-btn:hover {
+    background-color: #111419; /* Turns charcoal dark on hover */
+    border-color: #111419;
+    transform: translateY(-4px); /* Interactive vertical floating lift */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.social-circle-btn span {
+    font-size: 1.15rem;
+}
+
+/* Footer Bottom Base Trim */
+.footer-bottom-divider {
+    width: 100%;
+    max-width: 1200px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.15); /* Light break line */
+    margin: 50px auto 24px auto;
+}
+
+.footer-bottom-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright-text, .footer-location-stamp {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+
+/* ==========================================================================
+   MOBILE RESPONSIVE HAMBURGER STYLES
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 16px 24px; /* Slightly smaller spacing on mobile screen edges */
+    }
+
+    /* Show the Hamburger button on mobile */
+    .hamburger-btn {
+        display: flex;
+        z-index: 1001;
+    }
+
+    /* Turn the text links into a dropdown mobile drawer */
+    .nav-menu {
+        position: absolute;
+        top: 100%; /* Sits right underneath the main bar */
+        left: 0;
+        width: 100%;
+        background-color: #111a2e; /* Slate background */
+        border-bottom: 2px solid #FF6B35;
+        
+        /* Hidden state by default */
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+    }
+
+    /* Arrange the mobile links into a clean column */
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 0;
+        gap: 24px;
+    }
+
+    /* --- 
+    .nav-menu.active {
+        max-height: 300px;
+        opacity: 1;
+    }   */
+
+    /* 2. Turn the 3 lines into an 'X' close button and turn them orange */
+    .hamburger-btn.active .hamburger-line:nth-child(1) {
+        transform: translateY(7.5px) rotate(45deg);
+        background-color: #FF6B35;
+    }
+
+    .hamburger-btn.active .hamburger-line:nth-child(2) {
+        opacity: 0; /* Hide middle line */
+    }
+
+    .hamburger-btn.active .hamburger-line:nth-child(3) {
+        transform: translateY(-7.5px) rotate(-45deg);
+        background-color: #FF6B35;
+    }
+}
+
+/* Responsive Adjustments (Mobile/Tablet) */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column-reverse; /* Stack elements, image on top */
+        text-align: center; /* Center text when stacked */
+        gap: 30px;
+    }
+
+    .hero-heading {
+        font-size: 2.2rem;
+    }
+
+    .hero-image-right {
+        margin-bottom: 20px; /* Space between image and text */
+    }
+}
+
+/* ==========================================================================
+ ABOUT RESPONSIVENESS (Responsive Layout Tiering)
+   ========================================================================== */
+@media screen and (max-width: 992px) {
+    .about-grid {
+        grid-template-columns: 1fr; /* Switch grid columns to 100% rows on tablets */
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-section {
+        padding: 60px 20px;
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
+}
+
+
+
+/* ==========================================================================
+    PROJECTS 3x3 RESPONSIVENESS TIERING
+   ========================================================================== */
+
+/* Tablet Viewports: Transition from 3 columns into 2 columns */
+@media screen and (max-width: 992px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+}
+
+/* Mobile Viewports: Stacks into a clean 1-column list layout */
+@media screen and (max-width: 650px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .project-card {
+        padding: 24px;
+    }
+}
+
+
+
+/* ==========================================================================
+    CONTACT RESPONSIVENESS TIERING
+   ========================================================================== */
+
+/* Ensures layout adjusts nicely when stacked vertically on tablets */
+@media screen and (max-width: 768px) {
+    .contact-details {
+        margin: 0 auto; /* Centers the alignment box block on mobile */
+        text-align: left;
+    }
+}
+
+
+
+/* ==========================================================================
+   11A. FULLY RESPONSIVE BREAKPOINTS (MOBILE & DESKTOP)
+   ========================================================================== */
+@media screen and (max-width: 992px) {
+    .footer-top-container {
+        gap: 40px; /* Moderates column gap on medium viewports */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .site-footer {
+        padding: 60px 20px 30px 20px; /* Compact padding for small screens */
+    }
+
+    .footer-top-container {
+        flex-direction: column; /* Collapses horizontal columns into a clean vertical stack */
+        gap: 35px;
+    }
+
+    .brand-column {
+        max-width: 100%;
+    }
+
+    .footer-heading {
+        margin-bottom: 16px; /* Tighter margins on mobile headers */
+    }
+
+    .footer-bottom-divider {
+        margin: 40px auto 20px auto;
+    }
+
+    .footer-bottom-container {
+        flex-direction: column; /* Stacks copyright rows centered vertically */
+        gap: 10px;
+        text-align: center;
+    }
+}
+/* ==========================================================================
+   RESPONSIVE FORM SCALING RESPONSIVENESS
+   ========================================================================== */
+@media screen and (max-width: 992px) {
+    .portfolio-form {
+        padding: 30px 24px; /* Slightly tighter internal padding for tablets */
+    }
+}
+
